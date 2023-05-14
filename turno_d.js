@@ -149,7 +149,7 @@ function calcular_jornadas_d() {
 								if (t2 == "----") {
 									document.getElementById(t).style.backgroundColor = "gray";
 								} else {
-									document.getElementById(t).style.backgroundColor = "red";
+									document.getElementById(t).style.backgroundColor = "green";
 								}
 						i++;
 					}
