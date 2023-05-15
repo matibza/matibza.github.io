@@ -18,6 +18,7 @@ var selector = document.getElementById("sel");
 		alert("Cargando turno D");
 	}
 	if (selector.value == "DIUR") {
+		calcular_jornadas_diurno();
 		alert("Diurno");
 	}
 }
