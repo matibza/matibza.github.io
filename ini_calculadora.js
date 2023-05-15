@@ -18,7 +18,7 @@ var selector = document.getElementById("sel");
 		alert("Cargando turno D");
 	}
 	if (selector.value == "DIUR") {
-		
+		cargar_2023_diurno();
 		alert("Diurno");
 	}
 }
