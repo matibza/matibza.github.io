@@ -1,6 +1,6 @@
 var color = "gray";
 var espacios = 0;
-dia = 0;
+var dia = 0;
 function cargar_2023_diurno() {
 var f = 1;
 	
