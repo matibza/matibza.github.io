@@ -30,7 +30,16 @@ function blanquear() {
 				}
 		}
 }
-
+function blanquear_efes() {
+		for (var i = 2; i < 506; i++) {
+			ac= "f" + i
+			
+			document.getElementById(ac).style.backgroundColor = "gray";
+				if (i == 506) {
+					break
+				}
+		}
+}
 function recargar() {
 	location.reload();
 }
