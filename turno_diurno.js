@@ -65,6 +65,17 @@ function calcular_jornadas_diurno() {
 color = "gray";
 espacios = 0;
 dia = 0;
+enero_febrero = 0;			
+febrero_marzo = 0;			
+marzo_abril = 0;			
+abril_mayo = 0;				
+mayo_junio = 0;				
+junio_julio = 0;			
+julio_agosto = 0;			
+agosto_septiembre = 0;		
+septiembre_octubre = 0;		
+octubre_noviembre = 0;		
+noviembre_diciembre = 0;
 }
 function contar_vacios() {
 	for (var i = 2; i <= 8;) {
