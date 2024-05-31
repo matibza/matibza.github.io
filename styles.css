@@ -1,0 +1,161 @@
+.padre {
+	background-color: darkred;
+	height: 500px;
+	width: 100%;
+	margin-left: 0%;
+	box-shadow: 5px 5px 5px 5px;
+	border-radius: 5px;
+	padding-top: 5%;
+
+}
+.bodyy {
+	margin: 15px;
+	background-image: url(https://www.xtrafondos.com/wallpapers/fuegos-artificiales-de-colores-11326.jpg);
+}
+.encabezado {
+	font-family: Arial;
+	font-size: 15px;
+	border-bottom: 0px;
+	padding-top: 1%;
+	color: yellow;
+}
+.q {
+	background-color: black;
+	color: white;
+	font-family: Arial;
+	font-size: 12.4px;
+	border-bottom: 0px;
+}
+
+table {
+	border: solid darkred 1px;
+	border-spacing: 0;
+	box-shadow: 0px 0px 5px 5px;
+	border-radius: 5px;
+}
+.epa {
+	opacity: 50%;
+
+}
+
+td {
+	background-color: gray;
+}
+.div-color {
+	background-color: gray;
+	border-top: 0px;
+	height: 3px;
+}
+
+a {
+	font-family: arial;
+	font-size: 12.4px;
+	color: white;
+	background-color: gray;
+	text-decoration: none;
+}
+
+.titulo {
+	background-color: black;
+	font-family: arial;
+	font-size: 24px;
+	color: white;
+	justify-content: flex;
+	padding: 2% 2% 2% 2%;
+	margin-left: 7px;
+	margin-right: 7px;
+	height:30%;
+	width: 20%;
+}
+.radio-titulo {
+	border-radius: 5px;
+	box-shadow: red 0px 0px 2px 2px;
+}
+.bt-encabezado-izq {
+	height:60%;
+	width: 20%;
+
+background-color: black;
+color: white;
+border-color: red;
+border-radius: 5px;
+box-shadow: red 0px 0px 1px 1px;
+margin-left: 18%;
+}
+.bt-encabezado-der {
+	height:60%;
+	width: 20%;
+background-color: black;
+color: white;
+border-color: red;
+border-radius: 5px;
+box-shadow: red 0px 0px 1px 1px;
+
+}
+.select-encabezado {
+	width: 40%;
+	height: 70%;
+	margin-left: 6%;
+	border: solid red 2px;
+	border-radius: 10px;
+}
+.mes-feb {
+text-align: center;
+}
+
+
+.calcular {
+	width: 35%;
+	height: 30%;
+	font-family: arial;
+	font-size: 1.3em;
+	border: solid black 2px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px 2px;
+	opacity: 70%;
+}
+.cal-der {
+	margin-left: 20%;
+	
+	margin-top: 10px;
+}
+.calcular:focus {
+	color: blue;
+}
+.k {
+	background-color: transparent;
+	height: 60px;
+	
+	border-radius: 10px;
+}
+
+.mañana {
+	background-color: green;
+}
+.tarde {
+	background-color: orange;
+}
+.noche {
+	background-color: black;
+}
+.horarios {
+font-family: arial;
+font-size: 1.3em;
+color: white;
+border-radius: 5px 5px;
+padding: 5px;
+margin: auto;
+opacity: 60%;
+}
+.borde-horarios {
+	border: solid 2px black;
+}
+.horarios-padre {
+	padding: 10px;
+	background-color: transparent;
+	width: 97%;
+	height: 110px;
+}
+.anclas {
+	visibility: hidden;
+}
