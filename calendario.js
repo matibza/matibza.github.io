@@ -918,6 +918,3 @@ function dia_actual() {
 		}
 	}
 }
-function alerta() {
-	alert('*Nueva actualizacion: ¡se agregó referencia de la fecha actual y el comienzo del calendario se fijo en 2024!')
-}
