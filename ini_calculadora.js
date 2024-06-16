@@ -182,3 +182,6 @@ function cortar() {
 								document.getElementById("p11").style.fontSize = "16px";
 								document.getElementById("p12").style.fontSize = "16px";
 	}
+function alerta() {
+		alert("esta funcion aun no se encuentra disponible");
+	}
