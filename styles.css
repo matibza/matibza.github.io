@@ -115,7 +115,7 @@ text-align: center;
 	border: solid black 2px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 2px 2px;
-	opacity: 70%;
+
 }
 .cal-der {
 	margin-left: 20%;
@@ -148,7 +148,7 @@ color: white;
 border-radius: 5px 5px;
 padding: 5px;
 margin: auto;
-opacity: 60%;
+
 }
 .borde-horarios {
 	border: solid 2px black;
