@@ -187,5 +187,5 @@ function cortar() {
 								document.getElementById("p10").style.fontSize = "16px";
 								document.getElementById("p11").style.fontSize = "16px";
 								document.getElementById("p12").style.fontSize = "16px";
-		alert("no disponible todavia");
+		alert("En breve estara disponible =D");
 	}
