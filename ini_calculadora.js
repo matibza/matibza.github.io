@@ -103,11 +103,12 @@ s.style.backgroundColor = "red";
 }
 function recibosjeje(){
 	document.getElementById("padreto").style.opacity = "0%";
+	document.getElementById('ancla_enero').click();
 	setInterval(cortar, 2000)
 }
 function cortar() {
 	document.getElementById("padreto").style.display = "none";
-	document.getElementById('ancla_enero').click();
+	
 }
 
 
