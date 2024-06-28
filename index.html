@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-widtch, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="calendario.js"></script>
+	<script type="text/javascript" src="turno_b.js"></script>
+	<script type="text/javascript" src="turno_a.js"></script>
+	<script type="text/javascript" src="turno_c.js"></script>
+	<script type="text/javascript" src="turno_d.js"></script>
+	<script type="text/javascript" src="turno_diurno.js"></script>
+	<script type="text/javascript" src="ini_calculadora.js"></script>
+
+
+
+
+
+	<title>Calendario A-B-C-D</title>
+</head>
+
+<body class="bodyy" onload="enero(), dia_actual()">
+	<div id="padreto" class="padreto">
+		<div class="botonera">
+		<input id="boton_calc" class="my-fixed-item" type="button" value="B" onclick="letra_principal()">
+		<input id="boton_calc" class="my-fixed-item3" type="button" value="Reset" onclick="recargar();">
+		<input id="boton_calc" class="my-fixed-item2" type="button" value="Recibos"  onclick="recibosjeje(), ocultar()">
+		</div>
+	<a class="anclas" href="#tit" id="ancla_enero">enero</a>
+	<a class="anclas" href="#a2" id="ancla_febrero">febrero</a>
+	<a class="anclas" href="#a44" id="ancla_marzo">marzo</a>
+	<a class="anclas" href="#a86" id="ancla_abril">abril</a>
+	<a class="anclas" href="#a128" id="ancla_mayo">mayo</a>
+	<a class="anclas" href="#a170" id="ancla_junio">junio</a>
+	<a class="anclas" href="#a212" id="ancla_julio">julio</a>
+	<a class="anclas" href="#a254" id="ancla_agosto">agosto</a>
+	<a class="anclas" href="#a296" id="ancla_septiembre">septiembre</a>
+	<a class="anclas" href="#a338" id="ancla_octubre">octubre</a>
+	<a class="anclas" href="#a380" id="ancla_noviembre">noviembre</a>
+	<a class="anclas" href="#a422" id="ancla_diciembre">diciembre</a>
+	<br>
+	<br>
+
+												
+		<div class="k">
+										
+			<input class="bt-encabezado-izq" type="button" name="" value="Anterior" onclick="menos_an(), blanquear_efes()"><span id="tit" class="titulo radio-titulo">2024</span><input type="button" class="bt-encabezado-der" name="" value="Siguiente" onclick="nuevo_an(), blanquear_efes()"> 
+										
+		</div>
+		<div class="horarios-padre">
+				<span class="mañana horarios borde-horarios">   06:00 - 14:00   </span><select id="sel" class="calcular cal-der">
+					<option value="TB">Turno B</option>
+					<option value="TA">Turno A</option>
+					<option value="TC">Turno C</option>
+					<option value="TD">Turno D</option>
+					<option value="DIUR">Diurno</option>
+				</select>
+				<br>
+				<span class="tarde horarios borde-horarios">   14:00 - 22:00   </span><input class="calcular cal-der" type="button" name="" onclick="iniciar_calculadora();" value="Calcular">
+				<br>
+
+				<span class="noche horarios borde-horarios">   22:00 - 06:00   </span><input class="calcular cal-der" type="button" name="" onclick="recargar();" value="Reiniciar">
+		</div>
+		<br>
+		<br>
+		<center>
+	<table id="tb" class="epa" border="1" class="tabl" onclick="brillo();">
+
+																<!--PRIMER MES-->
+		
+		<td colspan="7" class="titulo mes-feb">Enero</td>
+		<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		</tr>
+		<tr>
+		<td align="center" id= 'a2' class="encabezado">&nbsp</td>
+		<td align="center" id= 'a3' class="encabezado"><a href="">&nbsp</a></td>
+		<td align="center" id= 'a4' class="encabezado"><a href="">&nbsp</a></td>
+		<td align="center" id= 'a5' class="encabezado"><a href="">&nbsp</a></td>
+		<td align="center" id= 'a6' class="encabezado"><a href="">&nbsp</a></td>
+		<td align="center" id= 'a7' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a8' class="encabezado"><a href="">2</a></td>
+		</tr>
+		<tr>
+			<td class="div-color " id="f2"></td>
+			<td class="div-color " id="f3"></td>
+			<td class="div-color " id="f4"></td>
+			<td class="div-color" id="f5"></td>
+			<td class="div-color" id="f6"></td>
+			<td class="div-color " id="f7"></td>
+			<td class="div-color " id="f8"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a9' class="encabezado"><a href="">3</a></td>
+			<td align="center" id= 'a10' class="encabezado"><a href="">4</a></td>
+			<td align="center" id= 'a11' class="encabezado"><a href="">5</a></td>
+			<td align="center" id= 'a12' class="encabezado"><a href="">6</a></td>
+			<td align="center" id= 'a13' class="encabezado"><a href="">7</a></td>
+			<td align="center" id= 'a14' class="encabezado"><a href="">8</a></td>
+			<td align="center" id= 'a15' class="encabezado"><a href="">9</a></td>
+
+		</tr>
+				<tr>
+			<td class="div-color " id="f9"></td>
+			<td class="div-color " id="f10"></td>
+			<td class="div-color " id="f11"></td>
+			<td class="div-color " id="f12"></td>
+			<td class="div-color " id="f13"></td>
+			<td class="div-color" id="f14"></td>
+			<td class="div-color" id="f15"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a16' class="encabezado"><a href="">10</a></td>
+			<td align="center" id= 'a17' class="encabezado"><a href="">11</a></td>
+			<td align="center" id= 'a18' class="encabezado"><a href="">12</a></td>
+			<td align="center" id= 'a19' class="encabezado"><a href="">13</a></td>
+			<td align="center" id= 'a20' class="encabezado"><a href="">14</a></td>
+			<td align="center" id= 'a21' class="encabezado"><a href="">15</a></td>
+			<td align="center" id= 'a22' class="encabezado"><a href="">16</a></td>
+
+		</tr>
+				<tr>
+			<td class="div-color" id="f16"></td>
+			<td class="div-color " id="f17"></td>
+			<td class="div-color " id="f18"></td>
+			<td class="div-color " id="f19"></td>
+			<td class="div-color " id="f20"></td>
+			<td class="div-color " id="f21"></td>
+			<td class="div-color " id="f22"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a23' class="encabezado"><a href="">17</a></td>
+			<td align="center" id= 'a24' class="encabezado"><a href="">18</a></td>
+			<td align="center" id= 'a25' class="encabezado"><a href="">19</a></td>
+			<td align="center" id= 'a26' class="encabezado"><a href="">20</a></td>
+			<td align="center" id= 'a27' class="encabezado"><a href="">21</a></td>
+			<td align="center" id= 'a28' class="encabezado"><a href="">22</a></td>
+			<td align="center" id= 'a29' class="encabezado"><a href="">23</a></td>
+
+		</tr>
+				<tr>
+			<td class="div-color " id="f23"></td>
+			<td class="div-color" id="f24"></td>
+			<td class="div-color" id="f25"></td>
+			<td class="div-color " id="f26"></td>
+			<td class="div-color " id="f27"></td>
+			<td class="div-color " id="f28"></td>
+			<td class="div-color " id="f29"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a30' class="encabezado"><a href="">24</a></td>
+			<td align="center" id= 'a31' class="encabezado"><a href="">25</a></td>
+			<td align="center" id= 'a32' class="encabezado"><a href="">26</a></td>
+			<td align="center" id= 'a33' class="encabezado"><a href="">27</a></td>
+			<td align="center" id= 'a34' class="encabezado"><a href="">28</a></td>
+			<td align="center" id= 'a35' class="encabezado"><a href="">29</a></td>
+			<td align="center" id= 'a36' class="encabezado"><a href="">30</a></td>
+
+		</tr>
+				<tr>
+			<td class="div-color" id="f30"></td>
+			<td class="div-color " id="f31"></td>
+			<td class="div-color " id="f32"></td>
+			<td class="div-color" id="f33"></td>
+			<td class="div-color" id="f34"></td>
+			<td class="div-color" id="f35"></td>
+			<td class="div-color" id="f36"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a37' class="encabezado"><a href="">31</a></td>
+			<td align="center" id= 'a38' class="encabezado"><a href="">&nbsp</a></td>
+			<td align="center" id= 'a39' class="encabezado"><a href="">&nbsp</a></td>
+			<td align="center" id= 'a40' class="encabezado"><a href="">&nbsp</a></td>
+			<td align="center" id= 'a41' class="encabezado"><a href="">&nbsp</a></td>
+			<td align="center" id= 'a42' class="encabezado"><a href="">&nbsp</a></td>
+			<td align="center" id= 'a43' class="encabezado"><a href="">&nbsp</a></td>
+
+		</tr>
+				<tr>
+			<td class="div-color" id="f37"></td>
+			<td class="div-color" id="f38"></td>
+			<td class="div-color" id="f39"></td>
+			<td class="div-color" id="f40"></td>
+			<td class="div-color" id="f41"></td>
+			<td class="div-color" id="f42"></td>
+			<td class="div-color" id="f43"></td>
+		</tr>
+														<!--SEGUNDO MES-->
+		<tr>
+			<td colspan="7" class="titulo mes-feb">Febrero</td>
+		</tr>
+		<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a44' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a45' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a46' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a47' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a48' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a49' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a50' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+			<tr>
+			<td class="div-color" id="f44"></td>
+			<td class="div-color" id="f45"></td>
+			<td class="div-color" id="f46"></td>
+			<td class="div-color" id="f47"></td>
+			<td class="div-color" id="f48"></td>
+			<td class="div-color " id="f49"></td>
+			<td class="div-color " id="f50"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a51' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a52' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a53' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a54' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a55' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a56' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a57' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+			<tr>
+			<td class="div-color " id="f51"></td>
+			<td class="div-color " id="f52"></td>
+			<td class="div-color " id="f53"></td>
+			<td class="div-color " id="f54"></td>
+			<td class="div-color " id="f55"></td>
+			<td class="div-color" id="f56"></td>
+			<td class="div-color" id="f57"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a58' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a59' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a60' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a61' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a62' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a63' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a64' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+			<tr>
+			<td class="div-color" id="f58"></td>
+			<td class="div-color " id="f59"></td>
+			<td class="div-color " id="f60"></td>
+			<td class="div-color " id="f61"></td>
+			<td class="div-color " id="f62"></td>
+			<td class="div-color " id="f63"></td>
+			<td class="div-color " id="f64"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a65' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a66' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a67' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a68' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a69' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a70' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a71' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+			<tr>
+			<td class="div-color " id="f65"></td>
+			<td class="div-color" id="f66"></td>
+			<td class="div-color" id="f67"></td>
+			<td class="div-color" id="f68"></td>
+			<td class="div-color " id="f69"></td>
+			<td class="div-color" id="f70"></td>
+			<td class="div-color " id="f71"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a72' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a73' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a74' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a75' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a76' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a77' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a78' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+			<tr>
+			<td class="div-color " id="f72"></td>
+			<td class="div-color " id="f73"></td>
+			<td class="div-color " id="f74"></td>
+			<td class="div-color" id="f75"></td>
+			<td class="div-color" id="f76"></td>
+			<td class="div-color" id="f77"></td>
+			<td class="div-color" id="f78"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a79' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a80' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a81' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a82' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a83' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a84' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a85' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+			<tr>
+			<td class="div-color" id="f79"></td>
+			<td class="div-color" id="f80"></td>
+			<td class="div-color" id="f81"></td>
+			<td class="div-color" id="f82"></td>
+			<td class="div-color" id="f83"></td>
+			<td class="div-color" id="f84"></td>
+			<td class="div-color" id="f85"></td>
+		</tr>
+													<!--COMIENZA MARZO-->
+		<tr>
+			<td colspan="7" class="titulo mes-feb">Marzo</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a86' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a87' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a88' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a89' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a90' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a91' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a92' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f86"></td>
+			<td class="div-color" id="f87"></td>
+			<td class="div-color" id="f88"></td>
+			<td class="div-color" id="f89"></td>
+			<td class="div-color" id="f90"></td>
+			<td class="div-color" id="f91"></td>
+			<td class="div-color" id="f92"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a93' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a94' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a95' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a96' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a97' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a98' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a99' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f93"></td>
+			<td class="div-color" id="f94"></td>
+			<td class="div-color" id="f95"></td>
+			<td class="div-color" id="f96"></td>
+			<td class="div-color" id="f97"></td>
+			<td class="div-color" id="f98"></td>
+			<td class="div-color" id="f99"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a100' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a101' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a102' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a103' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a104' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a105' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a106' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f100"></td>
+			<td class="div-color" id="f101"></td>
+			<td class="div-color" id="f102"></td>
+			<td class="div-color" id="f103"></td>
+			<td class="div-color" id="f104"></td>
+			<td class="div-color" id="f105"></td>
+			<td class="div-color" id="f106"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a107' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a108' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a109' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a110' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a111' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a112' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a113' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f107"></td>
+			<td class="div-color" id="f108"></td>
+			<td class="div-color" id="f109"></td>
+			<td class="div-color" id="f110"></td>
+			<td class="div-color" id="f111"></td>
+			<td class="div-color" id="f112"></td>
+			<td class="div-color" id="f113"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a114' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a115' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a116' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a117' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a118' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a119' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a120' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f114"></td>
+			<td class="div-color" id="f115"></td>
+			<td class="div-color" id="f116"></td>
+			<td class="div-color" id="f117"></td>
+			<td class="div-color" id="f118"></td>
+			<td class="div-color" id="f119"></td>
+			<td class="div-color" id="f120"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a121' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a122' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a123' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a124' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a125' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a126' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a127' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f121"></td>
+			<td class="div-color" id="f122"></td>
+			<td class="div-color" id="f123"></td>
+			<td class="div-color" id="f124"></td>
+			<td class="div-color" id="f125"></td>
+			<td class="div-color" id="f126"></td>
+			<td class="div-color" id="f127"></td>
+		</tr>
+		<tr>
+			<td colspan="7" class="titulo mes-feb">Abril</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a128' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a129' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a130' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a131' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a132' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a133' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a134' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f128"></td>
+			<td class="div-color" id="f129"></td>
+			<td class="div-color" id="f130"></td>
+			<td class="div-color" id="f131"></td>
+			<td class="div-color" id="f132"></td>
+			<td class="div-color" id="f133"></td>
+			<td class="div-color" id="f134"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a135' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a136' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a137' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a138' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a139' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a140' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a141' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f135"></td>
+			<td class="div-color" id="f136"></td>
+			<td class="div-color" id="f137"></td>
+			<td class="div-color" id="f138"></td>
+			<td class="div-color" id="f139"></td>
+			<td class="div-color" id="f140"></td>
+			<td class="div-color" id="f141"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a142' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a143' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a144' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a145' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a146' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a147' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a148' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f142"></td>
+			<td class="div-color" id="f143"></td>
+			<td class="div-color" id="f144"></td>
+			<td class="div-color" id="f145"></td>
+			<td class="div-color" id="f146"></td>
+			<td class="div-color" id="f147"></td>
+			<td class="div-color" id="f148"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a149' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a150' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a151' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a152' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a153' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a154' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a155' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f149"></td>
+			<td class="div-color" id="f150"></td>
+			<td class="div-color" id="f151"></td>
+			<td class="div-color" id="f152"></td>
+			<td class="div-color" id="f153"></td>
+			<td class="div-color" id="f154"></td>
+			<td class="div-color" id="f155"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a156' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a157' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a158' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a159' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a160' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a161' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a162' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f156"></td>
+			<td class="div-color" id="f157"></td>
+			<td class="div-color" id="f158"></td>
+			<td class="div-color" id="f159"></td>
+			<td class="div-color" id="f160"></td>
+			<td class="div-color" id="f161"></td>
+			<td class="div-color" id="f162"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a163' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a164' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a165' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a166' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a167' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a168' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a169' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f163"></td>
+			<td class="div-color" id="f164"></td>
+			<td class="div-color" id="f165"></td>
+			<td class="div-color" id="f166"></td>
+			<td class="div-color" id="f167"></td>
+			<td class="div-color" id="f168"></td>
+			<td class="div-color" id="f169"></td>
+		</tr>
+						<tr>
+			<td colspan="7" class="titulo mes-feb">Mayo</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a170' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a171' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a172' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a173' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a174' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a175' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a176' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f170"></td>
+			<td class="div-color" id="f171"></td>
+			<td class="div-color" id="f172"></td>
+			<td class="div-color" id="f173"></td>
+			<td class="div-color" id="f174"></td>
+			<td class="div-color" id="f175"></td>
+			<td class="div-color" id="f176"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a177' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a178' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a179' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a180' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a181' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a182' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a183' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f177"></td>
+			<td class="div-color" id="f178"></td>
+			<td class="div-color" id="f179"></td>
+			<td class="div-color" id="f180"></td>
+			<td class="div-color" id="f181"></td>
+			<td class="div-color" id="f182"></td>
+			<td class="div-color" id="f183"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a184' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a185' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a186' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a187' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a188' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a189' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a190' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f184"></td>
+			<td class="div-color" id="f185"></td>
+			<td class="div-color" id="f186"></td>
+			<td class="div-color" id="f187"></td>
+			<td class="div-color" id="f188"></td>
+			<td class="div-color" id="f189"></td>
+			<td class="div-color" id="f190"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a191' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a192' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a193' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a194' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a195' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a196' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a197' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f191"></td>
+			<td class="div-color" id="f192"></td>
+			<td class="div-color" id="f193"></td>
+			<td class="div-color" id="f194"></td>
+			<td class="div-color" id="f195"></td>
+			<td class="div-color" id="f196"></td>
+			<td class="div-color" id="f197"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a198' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a199' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a200' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a201' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a202' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a203' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a204' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f198"></td>
+			<td class="div-color" id="f199"></td>
+			<td class="div-color" id="f200"></td>
+			<td class="div-color" id="f201"></td>
+			<td class="div-color" id="f202"></td>
+			<td class="div-color" id="f203"></td>
+			<td class="div-color" id="f204"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a205' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a206' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a207' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a208' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a209' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a210' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a211' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f205"></td>
+			<td class="div-color" id="f206"></td>
+			<td class="div-color" id="f207"></td>
+			<td class="div-color" id="f208"></td>
+			<td class="div-color" id="f209"></td>
+			<td class="div-color" id="f210"></td>
+			<td class="div-color" id="f211"></td>
+		</tr>
+			<tr>
+			<td colspan="7" class="titulo mes-feb">Junio</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a212' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a213' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a214' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a215' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a216' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a217' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a218' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f212"></td>
+			<td class="div-color" id="f213"></td>
+			<td class="div-color" id="f214"></td>
+			<td class="div-color" id="f215"></td>
+			<td class="div-color" id="f216"></td>
+			<td class="div-color" id="f217"></td>
+			<td class="div-color" id="f218"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a219' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a220' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a221' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a222' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a223' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a224' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a225' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f219"></td>
+			<td class="div-color" id="f220"></td>
+			<td class="div-color" id="f221"></td>
+			<td class="div-color" id="f222"></td>
+			<td class="div-color" id="f223"></td>
+			<td class="div-color" id="f224"></td>
+			<td class="div-color" id="f225"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a226' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a227' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a228' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a229' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a230' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a231' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a232' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f226"></td>
+			<td class="div-color" id="f227"></td>
+			<td class="div-color" id="f228"></td>
+			<td class="div-color" id="f229"></td>
+			<td class="div-color" id="f230"></td>
+			<td class="div-color" id="f231"></td>
+			<td class="div-color" id="f232"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a233' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a234' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a235' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a236' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a237' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a238' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a239' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f233"></td>
+			<td class="div-color" id="f234"></td>
+			<td class="div-color" id="f235"></td>
+			<td class="div-color" id="f236"></td>
+			<td class="div-color" id="f237"></td>
+			<td class="div-color" id="f238"></td>
+			<td class="div-color" id="f239"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a240' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a241' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a242' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a243' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a244' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a245' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a246' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f240"></td>
+			<td class="div-color" id="f241"></td>
+			<td class="div-color" id="f242"></td>
+			<td class="div-color" id="f243"></td>
+			<td class="div-color" id="f244"></td>
+			<td class="div-color" id="f245"></td>
+			<td class="div-color" id="f246"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a247' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a248' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a249' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a250' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a251' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a252' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a253' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f247"></td>
+			<td class="div-color" id="f248"></td>
+			<td class="div-color" id="f249"></td>
+			<td class="div-color" id="f250"></td>
+			<td class="div-color" id="f251"></td>
+			<td class="div-color" id="f252"></td>
+			<td class="div-color" id="f253"></td>
+		</tr>
+					<tr>
+			<td colspan="7" class="titulo mes-feb">Julio</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a254' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a255' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a256' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a257' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a258' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a259' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a260' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f254"></td>
+			<td class="div-color" id="f255"></td>
+			<td class="div-color" id="f256"></td>
+			<td class="div-color" id="f257"></td>
+			<td class="div-color" id="f258"></td>
+			<td class="div-color" id="f259"></td>
+			<td class="div-color" id="f260"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a261' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a262' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a263' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a264' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a265' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a266' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a267' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f261"></td>
+			<td class="div-color" id="f262"></td>
+			<td class="div-color" id="f263"></td>
+			<td class="div-color" id="f264"></td>
+			<td class="div-color" id="f265"></td>
+			<td class="div-color" id="f266"></td>
+			<td class="div-color" id="f267"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a268' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a269' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a270' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a271' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a272' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a273' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a274' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f268"></td>
+			<td class="div-color" id="f269"></td>
+			<td class="div-color" id="f270"></td>
+			<td class="div-color" id="f271"></td>
+			<td class="div-color" id="f272"></td>
+			<td class="div-color" id="f273"></td>
+			<td class="div-color" id="f274"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a275' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a276' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a277' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a278' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a279' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a280' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a281' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f275"></td>
+			<td class="div-color" id="f276"></td>
+			<td class="div-color" id="f277"></td>
+			<td class="div-color" id="f278"></td>
+			<td class="div-color" id="f279"></td>
+			<td class="div-color" id="f280"></td>
+			<td class="div-color" id="f281"></td>
+		</tr>
+		<tr>
+		<td align="center" id= 'a282' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a283' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a284' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a285' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a286' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a287' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a288' class="encabezado"><a href="">1</a></td>
+
+		</tr>
+		<tr>
+			<td class="div-color" id="f282"></td>
+			<td class="div-color" id="f283"></td>
+			<td class="div-color" id="f284"></td>
+			<td class="div-color" id="f285"></td>
+			<td class="div-color" id="f286"></td>
+			<td class="div-color" id="f287"></td>
+			<td class="div-color" id="f288"></td>
+		</tr>
+		<tr>
+		<td align="center" id= 'a289' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a290' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a291' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a292' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a293' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a294' class="encabezado"><a href="">1</a></td>
+		<td align="center" id= 'a295' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f289"></td>
+			<td class="div-color" id="f290"></td>
+			<td class="div-color" id="f291"></td>
+			<td class="div-color" id="f292"></td>
+			<td class="div-color" id="f293"></td>
+			<td class="div-color" id="f294"></td>
+			<td class="div-color" id="f295"></td>
+		</tr>
+		<td colspan="7" class="titulo mes-feb">Agosto</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		<tr>
+			<td align="center" id= 'a296' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a297' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a298' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a299' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a300' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a301' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a302' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f296"></td>
+			<td class="div-color" id="f297"></td>
+			<td class="div-color" id="f298"></td>
+			<td class="div-color" id="f299"></td>
+			<td class="div-color" id="f300"></td>
+			<td class="div-color" id="f301"></td>
+			<td class="div-color" id="f302"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a303' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a304' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a305' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a306' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a307' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a308' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a309' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f303"></td>
+			<td class="div-color" id="f304"></td>
+			<td class="div-color" id="f305"></td>
+			<td class="div-color" id="f306"></td>
+			<td class="div-color" id="f307"></td>
+			<td class="div-color" id="f308"></td>
+			<td class="div-color" id="f309"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a310' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a311' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a312' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a313' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a314' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a315' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a316' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f310"></td>
+			<td class="div-color" id="f311"></td>
+			<td class="div-color" id="f312"></td>
+			<td class="div-color" id="f313"></td>
+			<td class="div-color" id="f314"></td>
+			<td class="div-color" id="f315"></td>
+			<td class="div-color" id="f316"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a317' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a318' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a319' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a320' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a321' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a322' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a323' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f317"></td>
+			<td class="div-color" id="f318"></td>
+			<td class="div-color" id="f319"></td>
+			<td class="div-color" id="f320"></td>
+			<td class="div-color" id="f321"></td>
+			<td class="div-color" id="f322"></td>
+			<td class="div-color" id="f323"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a324' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a325' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a326' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a327' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a328' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a329' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a330' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f324"></td>
+			<td class="div-color" id="f325"></td>
+			<td class="div-color" id="f326"></td>
+			<td class="div-color" id="f327"></td>
+			<td class="div-color" id="f328"></td>
+			<td class="div-color" id="f329"></td>
+			<td class="div-color" id="f330"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a331' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a332' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a333' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a334' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a335' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a336' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a337' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f331"></td>
+			<td class="div-color" id="f332"></td>
+			<td class="div-color" id="f333"></td>
+			<td class="div-color" id="f334"></td>
+			<td class="div-color" id="f335"></td>
+			<td class="div-color" id="f336"></td>
+			<td class="div-color" id="f337"></td>
+		</tr>
+				<td colspan="7" class="titulo mes-feb">Septiembre</td>
+
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a338' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a339' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a340' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a341' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a342' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a343' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a344' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f338"></td>
+			<td class="div-color" id="f339"></td>
+			<td class="div-color" id="f340"></td>
+			<td class="div-color" id="f341"></td>
+			<td class="div-color" id="f342"></td>
+			<td class="div-color" id="f343"></td>
+			<td class="div-color" id="f344"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a345' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a346' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a347' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a348' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a349' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a350' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a351' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f345"></td>
+			<td class="div-color" id="f346"></td>
+			<td class="div-color" id="f347"></td>
+			<td class="div-color" id="f348"></td>
+			<td class="div-color" id="f349"></td>
+			<td class="div-color" id="f350"></td>
+			<td class="div-color" id="f351"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a352' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a353' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a354' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a355' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a356' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a357' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a358' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f352"></td>
+			<td class="div-color" id="f353"></td>
+			<td class="div-color" id="f354"></td>
+			<td class="div-color" id="f355"></td>
+			<td class="div-color" id="f356"></td>
+			<td class="div-color" id="f357"></td>
+			<td class="div-color" id="f358"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a359' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a360' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a361' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a362' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a363' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a364' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a365' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f359"></td>
+			<td class="div-color" id="f360"></td>
+			<td class="div-color" id="f361"></td>
+			<td class="div-color" id="f362"></td>
+			<td class="div-color" id="f363"></td>
+			<td class="div-color" id="f364"></td>
+			<td class="div-color" id="f365"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a366' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a367' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a368' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a369' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a370' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a371' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a372' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f366"></td>
+			<td class="div-color" id="f367"></td>
+			<td class="div-color" id="f368"></td>
+			<td class="div-color" id="f369"></td>
+			<td class="div-color" id="f370"></td>
+			<td class="div-color" id="f371"></td>
+			<td class="div-color" id="f372"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a373' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a374' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a375' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a376' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a377' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a378' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a379' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f373"></td>
+			<td class="div-color" id="f374"></td>
+			<td class="div-color" id="f375"></td>
+			<td class="div-color" id="f376"></td>
+			<td class="div-color" id="f377"></td>
+			<td class="div-color" id="f378"></td>
+			<td class="div-color" id="f379"></td>
+		</tr>
+						<td colspan="7" class="titulo mes-feb">Octubre</td>
+			<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a380' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a381' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a382' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a383' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a384' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a385' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a386' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f380"></td>
+			<td class="div-color" id="f381"></td>
+			<td class="div-color" id="f382"></td>
+			<td class="div-color" id="f383"></td>
+			<td class="div-color" id="f384"></td>
+			<td class="div-color" id="f385"></td>
+			<td class="div-color" id="f386"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a387' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a388' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a389' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a390' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a391' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a392' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a393' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f387"></td>
+			<td class="div-color" id="f388"></td>
+			<td class="div-color" id="f389"></td>
+			<td class="div-color" id="f390"></td>
+			<td class="div-color" id="f391"></td>
+			<td class="div-color" id="f392"></td>
+			<td class="div-color" id="f393"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a394' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a395' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a396' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a397' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a398' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a399' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a400' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f394"></td>
+			<td class="div-color" id="f395"></td>
+			<td class="div-color" id="f396"></td>
+			<td class="div-color" id="f397"></td>
+			<td class="div-color" id="f398"></td>
+			<td class="div-color" id="f399"></td>
+			<td class="div-color" id="f400"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a401' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a402' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a403' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a404' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a405' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a406' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a407' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f401"></td>
+			<td class="div-color" id="f402"></td>
+			<td class="div-color" id="f403"></td>
+			<td class="div-color" id="f404"></td>
+			<td class="div-color" id="f405"></td>
+			<td class="div-color" id="f406"></td>
+			<td class="div-color" id="f407"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a408' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a409' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a410' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a411' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a412' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a413' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a414' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f408"></td>
+			<td class="div-color" id="f409"></td>
+			<td class="div-color" id="f410"></td>
+			<td class="div-color" id="f411"></td>
+			<td class="div-color" id="f412"></td>
+			<td class="div-color" id="f413"></td>
+			<td class="div-color" id="f414"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a415' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a416' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a417' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a418' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a419' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a420' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a421' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f415"></td>
+			<td class="div-color" id="f416"></td>
+			<td class="div-color" id="f417"></td>
+			<td class="div-color" id="f418"></td>
+			<td class="div-color" id="f419"></td>
+			<td class="div-color" id="f420"></td>
+			<td class="div-color" id="f421"></td>
+		</tr>
+		<tr>
+		<td colspan="7" class="titulo mes-feb">Noviembre</td>
+		</tr>
+				<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a422' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a423' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a424' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a425' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a426' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a427' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a428' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f422"></td>
+			<td class="div-color" id="f423"></td>
+			<td class="div-color" id="f424"></td>
+			<td class="div-color" id="f425"></td>
+			<td class="div-color" id="f426"></td>
+			<td class="div-color" id="f427"></td>
+			<td class="div-color" id="f428"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a429' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a430' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a431' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a432' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a433' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a434' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a435' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f429"></td>
+			<td class="div-color" id="f430"></td>
+			<td class="div-color" id="f431"></td>
+			<td class="div-color" id="f432"></td>
+			<td class="div-color" id="f433"></td>
+			<td class="div-color" id="f434"></td>
+			<td class="div-color" id="f435"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a436' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a437' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a438' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a439' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a440' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a441' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a442' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f436"></td>
+			<td class="div-color" id="f437"></td>
+			<td class="div-color" id="f438"></td>
+			<td class="div-color" id="f439"></td>
+			<td class="div-color" id="f440"></td>
+			<td class="div-color" id="f441"></td>
+			<td class="div-color" id="f442"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a443' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a444' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a445' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a446' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a447' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a448' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a449' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f443"></td>
+			<td class="div-color" id="f444"></td>
+			<td class="div-color" id="f445"></td>
+			<td class="div-color" id="f446"></td>
+			<td class="div-color" id="f447"></td>
+			<td class="div-color" id="f448"></td>
+			<td class="div-color" id="f449"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a450' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a451' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a452' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a453' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a454' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a455' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a456' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f450"></td>
+			<td class="div-color" id="f451"></td>
+			<td class="div-color" id="f452"></td>
+			<td class="div-color" id="f453"></td>
+			<td class="div-color" id="f454"></td>
+			<td class="div-color" id="f455"></td>
+			<td class="div-color" id="f456"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a457' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a458' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a459' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a460' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a461' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a462' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a463' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f457"></td>
+			<td class="div-color" id="f458"></td>
+			<td class="div-color" id="f459"></td>
+			<td class="div-color" id="f460"></td>
+			<td class="div-color" id="f461"></td>
+			<td class="div-color" id="f462"></td>
+			<td class="div-color" id="f463"></td>
+		</tr>
+		<tr>
+		<td colspan="7" class="titulo mes-feb">Diciembre</td>
+		</tr>
+
+		<tr>
+			<td class="q">Domingo</td>
+			<td class="q">Lunes</td>
+			<td class="q">Martes</td>
+			<td class="q">Miercoles</td>
+			<td class="q">Jueves</td>
+			<td class="q">Viernes</td>
+			<td class="q">Sabado</td>
+		</tr>
+
+		<tr>
+			<td align="center" id= 'a464' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a465' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a466' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a467' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a468' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a469' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a470' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f464"></td>
+			<td class="div-color" id="f465"></td>
+			<td class="div-color" id="f466"></td>
+			<td class="div-color" id="f467"></td>
+			<td class="div-color" id="f468"></td>
+			<td class="div-color" id="f469"></td>
+			<td class="div-color" id="f470"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a471' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a472' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a473' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a474' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a475' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a476' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a477' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f471"></td>
+			<td class="div-color" id="f472"></td>
+			<td class="div-color" id="f473"></td>
+			<td class="div-color" id="f474"></td>
+			<td class="div-color" id="f475"></td>
+			<td class="div-color" id="f476"></td>
+			<td class="div-color" id="f477"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a478' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a479' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a480' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a481' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a482' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a483' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a484' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f478"></td>
+			<td class="div-color" id="f479"></td>
+			<td class="div-color" id="f480"></td>
+			<td class="div-color" id="f481"></td>
+			<td class="div-color" id="f482"></td>
+			<td class="div-color" id="f483"></td>
+			<td class="div-color" id="f484"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a485' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a486' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a487' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a488' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a489' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a490' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a491' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f485"></td>
+			<td class="div-color" id="f486"></td>
+			<td class="div-color" id="f487"></td>
+			<td class="div-color" id="f488"></td>
+			<td class="div-color" id="f489"></td>
+			<td class="div-color " id="f490"></td>
+			<td class="div-color" id="f491"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a492' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a493' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a494' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a495' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a496' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a497' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a498' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f492"></td>
+			<td class="div-color" id="f493"></td>
+			<td class="div-color" id="f494"></td>
+			<td class="div-color" id="f495"></td>
+			<td class="div-color" id="f496"></td>
+			<td class="div-color" id="f497"></td>
+			<td class="div-color" id="f498"></td>
+		</tr>
+		<tr>
+			<td align="center" id= 'a499' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a500' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a501' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a502' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a503' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a504' class="encabezado"><a href="">1</a></td>
+			<td align="center" id= 'a505' class="encabezado"><a href="">1</a></td>
+		</tr>
+		<tr>
+			<td class="div-color" id="f499"></td>
+			<td class="div-color" id="f500"></td>
+			<td class="div-color" id="f501"></td>
+			<td class="div-color" id="f502"></td>
+			<td class="div-color" id="f503"></td>
+			<td class="div-color" id="f504"></td>
+			<td class="div-color" id="f505"></td>
+		</tr>
+							</table>
+							</center>
+
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>	
+<div id="recibo" class="padrefe">
+																<center>
+									<table id="ta" class="tabbb" border="1">
+										<tr>
+										<td id="a" class="titulos">Domingo</td>
+										<td id="b" class="titulos">Lunes</td>
+										<td id="c" class="titulos">Martes</td>
+										<td id="d" class="titulos">Miercoles</td>
+										<td id="e" class="titulos">Jueves</td>
+										<td id="f" class="titulos">Viernes</td>
+										<td id="g" class="titulos">Sabado</td>	
+										</tr>
+										<tr>
+										<td class="dia" id="a1">&nbsp</td>
+										<td class="dia" id="a2">&nbsp</td>
+										<td class="dia" id="a3">&nbsp</td>
+										<td class="dia" id="a4">&nbsp</td>
+										<td class="dia" id="a5">&nbsp</td>
+										<td class="dia" id="a6">&nbsp</td>
+										<td class="dia" id="a7">&nbsp</td>	
+										</tr>
+												<tr>
+												<td class="base" id="f1"></td>
+												<td class="base" id="f2"></td>
+												<td class="base" id="f3"></td>
+												<td class="base" id="f4"></td>
+												<td class="base" id="f5"></td>
+												<td class="base" id="f6"></td>
+												<td class="base" id="f7"></td>	
+												</tr>
+										<td class="dia" id="a8">&nbsp</td>
+										<td class="dia" id="a9">&nbsp</td>
+										<td class="dia" id="a10">&nbsp</td>
+										<td class="dia" id="a11">&nbsp</td>
+										<td class="dia" id="a12">&nbsp</td>
+										<td class="dia" id="a13">&nbsp</td>
+										<td class="dia" id="a14">&nbsp</td>	
+										</tr>
+												<tr>
+												<td class="base" id="f8"></td>
+												<td class="base" id="f9"></td>
+												<td class="base" id="f10"></td>
+												<td class="base" id="f11"></td>
+												<td class="base" id="f12"></td>
+												<td class="base" id="f13"></td>
+												<td class="base" id="f14"></td>	
+												</tr>
+										<td class="dia" id="a15">&nbsp</td>
+										<td class="dia" id="a16">&nbsp</td>
+										<td class="dia" id="a17">&nbsp</td>
+										<td class="dia" id="a18">&nbsp</td>
+										<td class="dia" id="a19">&nbsp</td>
+										<td class="dia" id="a20">&nbsp</td>
+										<td class="dia" id="a21">&nbsp</td>	
+										</tr>
+												<tr>
+												<td class="base" id="f15"></td>
+												<td class="base" id="f16"></td>
+												<td class="base" id="f17"></td>
+												<td class="base" id="f18"></td>
+												<td class="base" id="f19"></td>
+												<td class="base" id="f20"></td>
+												<td class="base" id="f21"></td>	
+												</tr>
+										<td class="dia" id="a22">&nbsp</td>
+										<td class="dia" id="a23">&nbsp</td>
+										<td class="dia" id="a24">&nbsp</td>
+										<td class="dia" id="a25">&nbsp</td>
+										<td class="dia" id="a26">&nbsp</td>
+										<td class="dia" id="a27">&nbsp</td>
+										<td class="dia" id="a28">&nbsp</td>	
+										</tr>
+												<tr>
+												<td class="base" id="f22"></td>
+												<td class="base" id="f23"></td>
+												<td class="base" id="f24"></td>
+												<td class="base" id="f25"></td>
+												<td class="base" id="f26"></td>
+												<td class="base" id="f27"></td>
+												<td class="base" id="f28"></td>	
+												</tr>
+										<td class="dia" id="a29">&nbsp</td>
+										<td class="dia" id="a30">&nbsp</td>
+										<td class="dia" id="a31">&nbsp</td>
+										<td class="dia" id="a32">&nbsp</td>
+										<td class="dia" id="a33">&nbsp</td>
+										<td class="dia" id="a34">&nbsp</td>
+										<td class="dia" id="a35">&nbsp</td>	
+										</tr>
+												<tr>
+												<td class="base" id="f29"></td>
+												<td class="base" id="f30"></td>
+												<td class="base" id="f31"></td>
+												<td class="base" id="f32"></td>
+												<td class="base" id="f33"></td>
+												<td class="base" id="f34"></td>
+												<td class="base" id="f35"></td>	
+												</tr>
+										<td class="dia" id="a36">&nbsp</td>
+										<td class="dia" id="a37">&nbsp</td>
+										<td class="dia" id="a38">&nbsp</td>
+										<td class="dia" id="a39">&nbsp</td>
+										<td class="dia" id="a40">&nbsp</td>
+										<td class="dia" id="a41">&nbsp</td>
+										<td class="dia" id="a42">&nbsp</td>	
+										</tr>
+												<tr>
+												<td class="base" id="f36"></td>
+												<td class="base" id="f37"></td>
+												<td class="base" id="f38"></td>
+												<td class="base" id="f39"></td>
+												<td class="base" id="f40"></td>
+												<td class="base" id="f41"></td>
+												<td class="base" id="f42"></td>	
+												</tr>
+									</table>
+									<br>
+														</center>
+									
+									<div class="ingresos pruebita">
+									<center><p class="fondo">(Ingresos)</p></center>
+									<p id="p1" class="parr">Horas normales:........................</p>
+									<p id="p2" class="parr">Horas +50%:...................................</p>
+									<p id="p3" class="parr">Horas +150%:..............................</p>
+									<p id="p4" class="parr">I EXP1712939/16:.......................</p>
+									<p id="p5" class="parr">VI EXP1712939/16:.....................</p>
+									<p id="p6" class="parr">Presentismo:.................................</p>
+									</div>
+									<br>
+									<div class="descuentos pruebita">
+									<center><p class="fondo">(Descuentos)</p></center>
+									<p id="p7" class="parr">Jubilacion SIPA:.....................</p>
+									<p id="p8" class="parr">INSSJP:...................................</p>
+									<p id="p9" class="parr">Obra social:.............................</p>
+									<p id="p10" class="parr">Sindicato adicional..................</p>
+									<p id="p11" class="parr">Gremio prev. Soc.....................</p>
+									<p id="p12" class="parr">Cuota sindical..........................</p>
+									</div>
+									<br>
+									<div class="opciones">
+									<span class="sp">Categoria:</span>
+									<select class="se">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+									</select>
+									<br>
+									<span class="sp">Antigüedad:</span>
+									<select class="se">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+										<option>23</option>
+										<option>24</option>
+										<option>25</option>
+										<option>26</option>
+										<option>27</option>
+										<option>28</option>
+										<option>29</option>
+										<option>30</option>
+									</select>
+									<br>
+									<span class="sp">Mes:</span>
+									<select class="se">
+										<option>Enero</option>
+										<option>Febrero</option>
+										<option>Marzo</option>
+										<option>Abril</option>
+										<option>Mayo</option>
+										<option>Junio</option>
+										<option>Julio</option>
+										<option>Agosto</option>
+										<option>Septiembre</option>
+										<option>Octubre</option>
+										<option>Noviembre</option>
+										<option>Diciembre</option>
+									</select>
+									<br>
+									<span class="sp">Quincena:</span>
+									<select class="se">
+										<option>1ra</option>
+										<option>2da</option>
+									</select>
+									<input type="button" value="Validar" name="">
+									</div>
+									<center><input class="bo" type="button" value="Calcular" name="">
+										<br>
+										<br>
+										<a href="https://matibza.github.io/">VOLVER</a>
+									</center>
+						</div>
+
+						<div id="bienvenida" class="bnvn">
+							<center>
+							<p class="matias">Matias Barraza</p>
+							<br>
+							<p class="matias">Web design</p>
+							</center>
+						</div>
+
+</body>
+</html>
