@@ -107,6 +107,7 @@ function recibosjeje(){
 }
 function cortar() {
 	document.getElementById("padreto").style.display = "none";
+	document.getElementById('ancla_enero').click();
 }
 
 
